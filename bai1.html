@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="count"></p>
+<button onclick="play()">Đếm số</button>
+<script>
+    let count = 1;
+    function play(){
+        count ++ ;
+        if(count>=100){
+            alert('Complete');
+            return;
+        }
+        setTimeout(play,200);
+        document.getElementById('count').innerHTML = count;
+    }
+
+</script>
+</body>
+</html>

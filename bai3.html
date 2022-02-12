@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<script>
+    let number = 20;
+    let a = 0;
+    let b = 1;
+    let soFibonacci = a + b;
+    let sum = 0;
+    // while (soFibonacci <= number + 1){
+    //     n1 = n2;
+    //     n2 = soFibonacci;
+    //     soFibonacci = n1 + n2;
+    //     console.log('so=======',soFibonacci);
+    //           document.write(n1);
+    // }
+    for (let i = 0; i <= number; i++) {
+        a = b;
+        console.log('n1----', a);
+        b = soFibonacci;
+        console.log('n2------', b)
+        soFibonacci = a + b;
+        console.log('soFibonacci---', soFibonacci);
+        document.write(' ' + a);
+    }
+</script>
+</body>
+</html>
